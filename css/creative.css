@@ -9,7 +9,7 @@ body {
   width: 100%;
 }
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Catamaran', sans-serif;
 }
 hr {
   border-color: rgba(149,78,45,1);
@@ -35,23 +35,25 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Andika', sans-serif;
 }
 p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
 .bg-primary {
   background-color: rgba(255,255,255,1);
   color:rgba(0,0,0,1);
+  background-image: url("../img/sand.jpg");
+  padding: 60px 0;
 }
 .bg-dark {
   background-color: #222222;
   color: white;
 }
 .text-faded {
-  color: rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 0.8);
 }
 section {
   padding: 100px 0;
@@ -65,20 +67,19 @@ aside {
 .navbar-default {
   background-color: rgba(149,78,45,1);
   border-color: rgba(34, 34, 34, 0.05);
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
   color: rgba(255,255,255,0.8);
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Andika', sans-serif;
   font-weight: 700;
   text-transform: uppercase;  
 }
 .navbar-default .navbar-header .navbar-toggle {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 13px;
   color: rgba(255,255,255,0.8);
   text-transform: uppercase;
   border-color:rgba(255,255,255,0.8);
@@ -91,9 +92,10 @@ aside {
 }
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
+  font-family: 'Andika', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
   color: rgba(255,255,255,0.8);
 }
 .navbar-default .nav > li > a:hover,
@@ -107,7 +109,14 @@ aside {
   background-color: forestgreen;
   color: rgba(255,255,255,0.8);
 }
-
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+    line-height: 0px;
+}
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
@@ -138,8 +147,7 @@ aside {
   .navbar-default.affix .navbar-header .navbar-brand {
     display:block;
     color: rgba(255,255,255,0.8);
-    font-size: 18px;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -148,21 +156,13 @@ aside {
     color: rgba(255,255,255,1);
   }
   .navbar-default.affix .nav {
-    margin-right:107px;
+    margin-right:116px;
   }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
     color: rgba(255,255,255,0.8);
     background-color: forestgreen;
   }
-}
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-}
-.navbar .navbar-collapse {
-    text-align: center;
-    line-height: 0px;
 }
 header {
   position: relative;
@@ -201,16 +201,6 @@ header .video-container video {
   transform: translateX(-50%) translateY(-50%);
   opacity: 0.7;  
 }
-/*header .header-content .header-content-inner {
-  max-width: 400px;
-  margin: 20px 15px 0 15px;
-}
-header .header-content .header-content-inner p {
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 16px;
-  text-shadow: 2px 3px 7px black;
-}*/
 header .header-content #logo{
   display: block;
   width:190px;
@@ -221,9 +211,12 @@ header .header-content #arrow{
   position:absolute;
   bottom:30px;
   margin-left:-25px;
-  max-width:40px;
+  width:40px;
+  height: 40px;
   opacity:0.7;
   transition:transform 0.35s;
+  background-image: url("../img/arrow1.png");
+  background-size: contain;
 }
 header .header-content #arrow:hover{
   transform: scale(1.1);
@@ -232,21 +225,73 @@ header .header-content #arrow:hover{
   header .header-content #logo{
   width:350px;
   margin-left: 50px;
-}
-header .header-content #arrow{
-  margin-left:-37px;
-  bottom:50px;
-  max-width:70px;
-}
-  /*header .header-content .header-content-inner {
-    max-width: 450px;
-    margin: 50px 50px 0 50px;
   }
-  header .header-content .header-content-inner p {
-    font-size: 18px;
-    max-width: 80%;
-    margin-bottom: 50px;
-  }*/
+header .header-content #arrow{
+  margin-left:-38px;
+  bottom:50px;
+  width:70px;
+  height:70px;
+  background-image: url("../img/arrow2.png");
+  }
+}
+@media (min-width: 1200px) {
+  header .header-content #arrow{
+  margin-left:-45px;
+  }
+}
+#white-background {
+  width:100%;
+  background-image: url("../img/white50.png");
+  background-repeat: repeat;
+  padding:30px 0;
+}
+#heading{
+  text-align: center;
+}
+#description {
+  text-align: center;
+  padding:15px 0;
+}
+#heading div, #description div {
+  display: inline-block;
+}
+#heading div{
+  max-width:760px;
+}
+#experience{
+  max-width:600px;
+}
+#style{
+  max-width:670px;
+}
+#location{
+  max-width: 540px;
+}
+#sun {
+  background-image: url(../img/sun.png);
+  background-size: contain;
+  width: 65px;
+  height: 52px;
+  display: inline-block;
+}
+#fish {
+  background-image: url(../img/fish.png);
+  background-size: contain;
+  width: 80px;
+  height: 43px;
+  display: inline-block;
+}
+#wave{
+  background-image: url(../img/wave.png);
+  background-size: contain;
+  width: 67px;
+  height: 48px;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  #style {
+    max-width: 755px;
+  }
 }
 .section-heading {
   margin-top: 0;
@@ -292,7 +337,7 @@ header .header-content #arrow{
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Andika', sans-serif;
   padding: 0 15px;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -341,9 +386,8 @@ header .header-content #arrow{
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #222222;
-  background-color: #f2f2f2;
-  border-color: #ededed;
+  color: rgba(255,255,255,0.8);
+  background-color: forestgreen;
 }
 .btn-default:active,
 .btn-default.active,
@@ -424,7 +468,7 @@ fieldset[disabled] .btn-primary.active {
   background-color: white;
 }
 .btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Andika', sans-serif;
   border: none;
   border-radius: 300px;
   font-weight: 700;

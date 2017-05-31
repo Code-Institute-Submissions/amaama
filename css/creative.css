@@ -40,29 +40,15 @@ h6 {
 p {
   font-size: 20px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .bg-primary {
   background-color: rgba(255,255,255,1);
   color:rgba(0,0,0,1);
   background-image: url("../img/sand.jpg");
-  padding: 60px 0;
-}
-.bg-dark {
-  background-color: #222222;
-  color: white;
 }
 .text-faded {
   color: rgba(0, 0, 0, 0.8);
-}
-section {
-  padding: 100px 0;
-}
-aside {
-  padding: 50px 0;
-}
-.no-padding {
-  padding: 0;
 }
 .navbar-default {
   background-color: rgba(149,78,45,1);
@@ -239,24 +225,33 @@ header .header-content #arrow{
   margin-left:-45px;
   }
 }
-#white-background {
+#about .white-background{
+  padding:60px 0px;
+}
+.white-background {
   width:100%;
   background-image: url("../img/white50.png");
   background-repeat: repeat;
-  padding:30px 0;
 }
-#heading{
+#about-heading{
   text-align: center;
 }
 #description {
   text-align: center;
   padding:15px 0;
 }
-#heading div, #description div {
+#about-heading div, #description div {
   display: inline-block;
 }
-#heading div{
+#description div{
+  margin-bottom: 15px;
+}
+#about-heading div{
   max-width:760px;
+}
+.about-subheading{
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 #experience{
   max-width:600px;
@@ -296,81 +291,134 @@ header .header-content #arrow{
 .section-heading {
   margin-top: 0;
 }
-.service-box {
-  max-width: 400px;
-  margin: 50px auto 0;
+#heading-background{
+  background-image: url(../img/menu.jpg);
+  background-size: cover;
+  background-position-y: 30%; 
+  height: 300px;
+  color:white;
+  text-align: center;  
 }
-@media (min-width: 992px) {
-  .service-box {
-    margin: 20px auto 0;
+#menus {
+  padding: 0px;
+}
+#menus-heading{
+  font-size: 70px;
+  margin-top: 0px;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+#menus p{
+  padding:0 15px;
+}
+#breakfast{
+  margin-top: 30px;
+}
+#menus img{
+  width:270px;
+  margin-bottom: 30px;
+}
+#breakfast-menu,#lunch-menu,#dinner-menu{
+  margin-bottom:30px;
+}
+.menus-subheading{
+  margin-top:0px;
+}
+#additional-info{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color:black;
+}
+#additional-info .container div{
+  margin-top: 15px;
+  padding:0px;
+}
+@media (min-width: 768px){
+  #menus-heading{
+    padding-top: 70px;
+  }
+  #menus img{
+    width:340px;
+  }
+  #breakfast{
+  margin-top: 60px;
+  }  
+}
+@media (min-width: 1200px){
+  #breakfast-menu{
+    height: 255px;
+  }
+  #lunch-menu{
+    height: 250px;
+    padding-top: 20px;
+  }
+  #dinner-menu{
+    height: 281px;
+    padding:0px 45px;
+  }
+  #dinner-img{
+    margin-top: 20px;
+  }
+  #keiki-menu{
+    height: 199px;
+    padding-top: 30px;
   }
 }
-.service-box p {
-  margin-bottom: 0;
+#gallery, .no-padding{
+  padding: 0px;
 }
-.portfolio-box {
-  position: relative;
-  display: block;
-  max-width: 650px;
-  margin: 0 auto;
+#myCarousel, .carousel-inner, .item{
+  height: 270px;
 }
-.portfolio-box .portfolio-box-caption {
-  color: white;
-  opacity: 0;
-  display: block;
-  background: rgba(240, 95, 64, 0.9);
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
+#slide-one{
+  background-image: url(../img/slide-one-mobile.jpg);
 }
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+#slide-two{
+  background-image: url(../img/slide-two-mobile.jpg);
 }
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-  font-family: 'Andika', sans-serif;
-  padding: 0 15px;
+#slide-three{
+  background-image: url(../img/slide-three-mobile.jpg);
 }
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 14px;
+#slide-four{
+  background-image: url(../img/slide-four-mobile.jpg);
 }
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-  font-size: 18px;
+#slide-five{
+  background-image: url(../img/slide-five-mobile.jpg);
 }
-.portfolio-box:hover .portfolio-box-caption {
-  opacity: 1;
+.item{
+  background-size: cover;
+  background-position: 50%;
 }
-.portfolio-box:focus {
-  outline: none;
-}
-@media (min-width: 768px) {
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-    font-size: 16px;
+@media (min-width: 768px){
+  #myCarousel, .carousel-inner, .item{
+    height: 450px;
   }
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-    font-size: 22px;
+  #slide-one{
+  background-image: url(../img/slide-one.jpg);
+  }
+  #slide-two{
+    background-image: url(../img/slide-two.jpg);
+  }
+  #slide-three{
+    background-image: url(../img/slide-three.jpg);
+  }
+  #slide-four{
+    background-image: url(../img/slide-four.jpg);
+  }
+  #slide-five{
+    background-image: url(../img/slide-five.jpg);
   }
 }
-.call-to-action h2 {
-  margin: 0 auto 20px;
+@media (min-width: 1200px){
+  #myCarousel, .carousel-inner, .item{
+    height: 750px;
+  } 
+}
+#contact{
+  padding:60px 0px;
 }
 .text-primary {
   color: rgba(149,78,45,1);
-}
-.no-gutter > [class*='col-'] {
-  padding-right: 0;
-  padding-left: 0;
 }
 .btn-default {
   color: rgba(255,255,255,0.9);
@@ -418,54 +466,6 @@ fieldset[disabled] .btn-default.active {
 .btn-default .badge {
   color: white;
   background-color: #222222;
-}
-.btn-primary {
-  color: white;
-  background-color: rgba(149,78,45,1);
-  border-color: rgba(149,78,45,1);
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
-}
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary.focus,
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-  color: white;
-  background-color: #ee4b28;
-  border-color: #ed431f;
-}
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-  background-image: none;
-}
-.btn-primary.disabled,
-.btn-primary[disabled],
-fieldset[disabled] .btn-primary,
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled.focus,
-.btn-primary[disabled].focus,
-fieldset[disabled] .btn-primary.focus,
-.btn-primary.disabled:active,
-.btn-primary[disabled]:active,
-fieldset[disabled] .btn-primary:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled].active,
-fieldset[disabled] .btn-primary.active {
-  background-color: rgba(149,78,45,1);
-  border-color: rgba(149,78,45,1);
-}
-.btn-primary .badge {
-  color: rgba(149,78,45,1);
-  background-color: white;
 }
 .btn {
   font-family: 'Andika', sans-serif;

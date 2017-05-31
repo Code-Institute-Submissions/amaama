@@ -414,8 +414,35 @@ header .header-content #arrow{
     height: 750px;
   } 
 }
-#contact{
-  padding:60px 0px;
+#reservation{
+  padding:30px 15px;
+}
+#reservation form {
+  margin: 15px auto;
+  max-width: 750px;
+}
+@media (min-width: 768px){
+  #reservation{
+  padding:60px 15px;
+  }
+  #reservation form {
+    text-align: center;
+  }
+}
+#reservation label {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 18px;
+  line-height: 2;
+}
+.form-control{
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom:15px;
+  height:35px;
+  padding:0px 12px;
+}
+.align-right{
+  text-align: right;
 }
 .text-primary {
   color: rgba(149,78,45,1);
@@ -423,7 +450,6 @@ header .header-content #arrow{
 .btn-default {
   color: rgba(255,255,255,0.9);
   background-color: rgba(149,78,45,1);
-  border-color: white;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;

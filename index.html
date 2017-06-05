@@ -2,42 +2,22 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
+    <title>'AMA'AMA Hawaiian Cuisine Restaurant</title>
+    <meta name="description" content="AMAAMA is an upscale Hawaiian cuisine restaurant serving breakfast, lunch and dinner at Aulani, A Disney Resort &amp; Spa in Ko Olina, Hawaii.">
+    <meta name="author" content="Disney Aulani Resort">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>'AMA'AMA RESTAURANT</title>
-
-    <!-- Bootstrap Core CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Andika|Catamaran" rel="stylesheet">
-
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/creative.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <link href="css/amaama.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
 </head>
 
 <body id="page-top">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
@@ -45,7 +25,6 @@
                 <a class="navbar-brand page-scroll" href="#page-top">'AMA'AMA</a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
@@ -62,17 +41,12 @@
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
     </nav>
 
     <header> 
         <div class="header-content">
             <img src="img/logo.png" alt="logo" id="logo">            
-            <!--<div class="header-content-inner">
-                <p>Enjoy modern interpretations of classic cuisine of the Hawaiian Islands in an elegant, oceanfront setting for breakfast, lunch or dinner</p>
-            </div>-->  
             <a class="page-scroll" href="#about" title="arrow down" id="arrow"></a>        
         </div>
         <div class="video-container">
@@ -180,7 +154,6 @@
     <section id="gallery">
         <div class="container-fluid no-padding">
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
             <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -189,7 +162,6 @@
               <li data-target="#myCarousel" data-slide-to="4"></li>
             </ol>
 
-            <!-- Wrapper for slides -->
             <div class="carousel-inner">
               <div class="item active" id="slide-one" title="slide one">
               </div>
@@ -203,7 +175,6 @@
               </div>
             </div>
 
-            <!-- Left and right controls -->
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
               <span class="glyphicon glyphicon-chevron-left"></span>
               <span class="sr-only">Previous</span>
@@ -230,50 +201,50 @@
               <div class="form-group row">
                 <label for="reservation-date" class="col-sm-1 col-form-label">Date</label>
                 <div class="col-sm-3">
-                    <input type="text" class="form-control text-faded" id="reservation-date" aria-describedby="date" placeholder="dd/mm/yyyy" required="">
+                    <input type="text" class="form-control text-faded" id="reservation-date" placeholder="dd/mm/yyyy" required="">
                 </div> 
                 <label for="reservation-time" class="col-sm-1 col-form-label">Time</label>
                 <div class="col-sm-4">
                     <select class="form-control text-faded" id="reservation-time" required="">
-                      <option>Breakfast 07:00 AM</option>
-                      <option>Breakfast 07:30 AM</option>
-                      <option>Breakfast 08:00 AM</option>
-                      <option>Breakfast 08:30 AM</option>
-                      <option>Breakfast 09:00 AM</option>
-                      <option>Breakfast 09:30 AM</option>
-                      <option>Breakfast 10:00 AM</option>
-                      <option>Breakfast 10:30 AM</option>
-                      <option>Breakfast 11:00 AM</option>
-                      <option>Lunch 11:30 AM</option>
-                      <option>Lunch 12:00 PM</option>
-                      <option>Lunch 12:30 PM</option>
-                      <option>Lunch 1:00 PM</option>
-                      <option>Lunch 1:30 PM</option>
-                      <option>Lunch 2:00 PM</option>
-                      <option>Lunch 2:30 PM</option>
-                      <option>Dinner 5:00 PM</option>
-                      <option>Dinner 5:30 PM</option>
-                      <option>Dinner 6:00 PM</option>
-                      <option>Dinner 6:30 PM</option>
-                      <option>Dinner 7:00 PM</option>
-                      <option>Dinner 7:30 PM</option>
-                      <option>Dinner 8:00 PM</option>
-                      <option>Dinner 8:30 PM</option>
-                      <option>Dinner 9:00 PM</option>
+                      <option value="">Breakfast 07:00 AM</option>
+                      <option value="">Breakfast 07:30 AM</option>
+                      <option value="">Breakfast 08:00 AM</option>
+                      <option value="">Breakfast 08:30 AM</option>
+                      <option value="">Breakfast 09:00 AM</option>
+                      <option value="">Breakfast 09:30 AM</option>
+                      <option value="">Breakfast 10:00 AM</option>
+                      <option value="">Breakfast 10:30 AM</option>
+                      <option value="">Breakfast 11:00 AM</option>
+                      <option value="">Lunch 11:30 AM</option>
+                      <option value="">Lunch 12:00 PM</option>
+                      <option value="">Lunch 12:30 PM</option>
+                      <option value="">Lunch 1:00 PM</option>
+                      <option value="">Lunch 1:30 PM</option>
+                      <option value="">Lunch 2:00 PM</option>
+                      <option value="">Lunch 2:30 PM</option>
+                      <option value="">Dinner 5:00 PM</option>
+                      <option value="">Dinner 5:30 PM</option>
+                      <option value="">Dinner 6:00 PM</option>
+                      <option value="">Dinner 6:30 PM</option>
+                      <option value="">Dinner 7:00 PM</option>
+                      <option value="">Dinner 7:30 PM</option>
+                      <option value="">Dinner 8:00 PM</option>
+                      <option value="">Dinner 8:30 PM</option>
+                      <option value="">Dinner 9:00 PM</option>
                     </select>
                 </div> 
-                <label for="party-size" class="col-sm-1 col-form-label align-right">People</span></label>
+                <label for="party-size" class="col-sm-1 col-form-label align-right">People</label>
                 <div class="col-sm-2">
                     <select class="form-control text-faded" id="party-size" required="">
-                      <option>1</option>
-                      <option selected>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                      <option>6</option>
-                      <option>7</option>
-                      <option>8</option>
-                      <option>9</option>
+                      <option value="">1</option>
+                      <option value="" selected>2</option>
+                      <option value="">3</option>
+                      <option value="">4</option>
+                      <option value="">5</option>
+                      <option value="">6</option>
+                      <option value="">7</option>
+                      <option value="">8</option>
+                      <option value="">9</option>
                     </select>
                 </div>                           
               </div>
@@ -322,19 +293,12 @@
         <p>Copyright @ 2017 Disney, All Rights Reserved<p>
     </footer>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>    
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/creative.js"></script>
+    <script src="js/amaama.js"></script>
 
 </body>
 

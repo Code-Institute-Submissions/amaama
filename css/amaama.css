@@ -414,7 +414,7 @@ header .header-content #arrow{
   padding:30px 15px 0px 15px;
 }
 #reservation form {
-  margin: 15px auto;
+  margin: 15px auto 30px auto;
   max-width: 750px;
 }
 .form-group{
@@ -426,6 +426,7 @@ header .header-content #arrow{
   }
   #reservation form {
     text-align: center;
+    margin: 15px auto 10px auto;
   }
   .form-group{
   margin-bottom: 15px;
@@ -446,16 +447,16 @@ header .header-content #arrow{
 .align-right{
   text-align: right;
 }
-.text-primary {
-  color: rgba(149,78,45,1);
-}
 footer{
   text-align: center;
-  padding:15px 15px 30px 15px;
+  margin:15px 15px 30px 15px;
 }
 footer p{
   font-size:18px;
   margin:0;
+}
+.text-primary {
+  color: rgba(149,78,45,1);
 }
 .btn-default {
   color: rgba(255,255,255,0.9);

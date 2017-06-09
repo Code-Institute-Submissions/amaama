@@ -447,6 +447,11 @@ header .header-content #arrow{
 .align-right{
   text-align: right;
 }
+#submitMessage{
+  margin-top: 15px;
+  color:rgba(149,78,45,1);
+  font-weight: 600;
+}
 footer{
   text-align: center;
   margin:15px 15px 30px 15px;

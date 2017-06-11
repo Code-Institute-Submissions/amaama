@@ -1,4 +1,6 @@
-$("#submitMessage").hide();
+$(document).ready(function(){
+        $("#submitMessage").hide();
+    });
 
 $('form').on('submit', function showMessage(){
     $('form').fadeOut(400);

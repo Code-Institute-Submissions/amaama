@@ -179,6 +179,7 @@ header .video-container video {
   width: auto;
   height: auto;
   z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   opacity: 0.7;  
@@ -196,11 +197,14 @@ header .header-content #arrow{
   width:40px;
   height: 40px;
   opacity:0.7;
+  -webkit-transition:transform 0.35s;
   transition:transform 0.35s;
   background-image: url("../img/arrow1.png");
   background-size: contain;
 }
 header .header-content #arrow:hover{
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 @media (min-width: 768px) {

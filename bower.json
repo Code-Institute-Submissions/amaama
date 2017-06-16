@@ -1,0 +1,22 @@
+{
+  "name": "amaama",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Tatjana Kolhapure <tatjanagkolhapure@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/tatjanakolhapure/amaama",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4"
+  }
+}

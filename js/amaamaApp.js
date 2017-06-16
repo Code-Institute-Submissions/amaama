@@ -1,4 +1,8 @@
-angular.module('amaamaApp', ['amaamaDirective']);
+angular.module('amaamaApp', ['ngRoute','amaamaDirective']);
+
+angular.module('amaamaApp').config(function($locationProvider, $routeProvider) {
+    $locationProvider.html5Mode(true);
+});
 
 angular.module('amaamaDirective',[])
 

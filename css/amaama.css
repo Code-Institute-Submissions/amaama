@@ -36,6 +36,7 @@ p {
 }
 .navbar-default {
   background-color: rgba(149,78,45,1);
+  border:none;
 }
 .navbar-default .navbar-header .navbar-brand {
   color: rgba(255,255,255,0.8);

@@ -7,22 +7,18 @@ angular.module('amaamaApp').config(function($locationProvider, $routeProvider) {
 angular.module('amaamaDirective',[])
 
 .directive('scroll', function(){
-  return{
-    link:function(scope,element){
-      $(document).on('click', 'a.page-scroll', function(event) {
+  return {
+    restrict: 'A',
+    link: function(scope,element){
+    // the function below is used from bootstrap template
+    $('a.page-scroll').on('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: ($($anchor.attr('href')).offset().top - 50)
         }, 1250, 'easeInOutExpo');
         event.preventDefault();
-      });
-      $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
-      });
-      $('.navbar-collapse ul li a').click(function() {
-        $('.navbar-toggle:visible').click();
-      });
+    });
+      //end of function used from bootstrap template      
     }
   };
 })
@@ -37,9 +33,9 @@ angular.module('amaamaDirective',[])
               offset: {
                   top: 100
               }
-          });      
-      }
+          });        
       //end of function used from bootstrap template
+    }
   };
 })
 

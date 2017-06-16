@@ -345,6 +345,9 @@ footer p{
   .navbar-default.affix-top {
     border:none;
   }
+  .navbar-default.affix-top ul {
+    margin-left:15px;
+  }
   .navbar-default.affix {
     background-color: rgba(149,78,45,1);
   }

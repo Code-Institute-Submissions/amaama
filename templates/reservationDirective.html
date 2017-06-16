@@ -1,0 +1,109 @@
+<section id="reservation">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Reserve a table</h2>
+                    <hr class="primary">
+                    <p class="text-faded">To make a reservation, please fill in the form below. All fields are required. At this time, you can make online reservations for a party of up to 9 guests.</p>
+                </div>
+            </div>
+
+            <form>
+              <div class="form-group row">
+                <label for="reservation-date" class="col-sm-1 col-form-label">Date</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control text-faded" id="reservation-date" placeholder="dd/mm/yyyy" pattern="\d{2}/\d{2}/\d{4}" title="Date must be in the format dd/mm/yyyy" required>
+                </div> 
+                <label for="reservation-time" class="col-sm-1 col-form-label">Time</label>
+                <div class="col-sm-4">
+                    <select class="form-control text-faded" id="reservation-time" required>
+                      <option selected label="Choose reservation time" disabled hidden></option>
+                      <option>Breakfast 07:00 AM</option>
+                      <option>Breakfast 07:30 AM</option>
+                      <option>Breakfast 08:00 AM</option>
+                      <option>Breakfast 08:30 AM</option>
+                      <option>Breakfast 09:00 AM</option>
+                      <option>Breakfast 09:30 AM</option>
+                      <option>Breakfast 10:00 AM</option>
+                      <option>Breakfast 10:30 AM</option>
+                      <option>Breakfast 11:00 AM</option>
+                      <option>Lunch 11:30 AM</option>
+                      <option>Lunch 12:00 PM</option>
+                      <option>Lunch 12:30 PM</option>
+                      <option>Lunch 1:00 PM</option>
+                      <option>Lunch 1:30 PM</option>
+                      <option>Lunch 2:00 PM</option>
+                      <option>Lunch 2:30 PM</option>
+                      <option>Dinner 5:00 PM</option>
+                      <option>Dinner 5:30 PM</option>
+                      <option>Dinner 6:00 PM</option>
+                      <option>Dinner 6:30 PM</option>
+                      <option>Dinner 7:00 PM</option>
+                      <option>Dinner 7:30 PM</option>
+                      <option>Dinner 8:00 PM</option>
+                      <option>Dinner 8:30 PM</option>
+                      <option>Dinner 9:00 PM</option>
+                    </select>
+                </div> 
+                <label for="party-size" class="col-sm-1 col-form-label align-right">People</label>
+                <div class="col-sm-2">
+                    <select class="form-control text-faded" id="party-size" required>
+                      <option label="Select" selected disabled hidden></option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                    </select>
+                </div>                           
+              </div>
+
+              <div class="form-group row">                    
+                <label for="first-name" class="col-sm-2 col-form-label">First Name</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control text-faded" id="first-name" autocomplete="on" placeholder="Enter your first name" required>
+                </div>
+                <label for="last-name" class="col-sm-2 col-form-label align-right">Last Name</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control text-faded" id="last-name" autocomplete="on" placeholder="Enter your last name" required>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="email-address" class="col-sm-1 col-form-label">Email</label>
+                <div class="col-sm-5">
+                    <input type="email" class="form-control text-faded" id="email-address" autocomplete="on" placeholder="your@email.com" required>
+                </div>
+                <label for="phone-number" class="col-sm-1 col-form-label">Phone</label>
+                <div class="col-sm-5">
+                    <input type="tel" class="form-control text-faded" id="phone-number" autocomplete="on" placeholder="00000000000" pattern="[0-9]+" title="Mobile number must contain digits only" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Additional information (food allergies, special requests)</label>
+                <textarea class="form-control text-faded" id="message" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-default btn-xl sr-button">Submit</button>
+            </form>
+
+            <div class="row" id="submitMessage">
+              <div class="col-lg-8 col-lg-offset-2 text-center">
+                <p>Thank you. Your reservation has been accepted. We will contact you shortly.</p>
+              </div>              
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 text-center">
+                    <h3>Reserve by phone</h3>
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p class="text-faded">(808) 674-6200</p>                
+                    <p class="text-faded">For Parties of 10 or more, please call (808) 674-6330.</p>
+                    <p class="text-faded">Dining parties on separate reservations cannot be guaranteed adjacent seating.</p>
+                </div>                
+            </div>
+        </div>
+    </section>

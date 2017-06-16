@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app='amaamaApp'>
 
 <head>
     <meta charset="utf-8">
@@ -12,7 +12,6 @@
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/creative.css">
     <link href="css/amaama.css" rel="stylesheet">
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
-    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
 </head>
@@ -20,289 +19,20 @@
 <body id="page-top">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">'AMA'AMA</a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#menus">Menus</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#gallery">Gallery</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#reservation">Reservation</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+      <nav-directive></nav-directive>
     </nav>
+    
+    <header-directive></header-directive>
 
-    <header> 
-        <div class="header-content">
-            <img src="img/logo.png" alt="logo" id="logo">            
-            <a class="page-scroll" href="#about" title="arrow down" id="arrow"></a>        
-        </div>
-        <div class="video-container">
-            <video autoplay loop poster="img/header.jpg">
-                <source src="video/header-video.mp4" type="video/mp4">
-            </video>
-        </div>
-    </header>
+    <about-directive></about-directive>
+    
+    <menus-directive></menus-directive> 
 
-    <section class="bg-primary" id="about">
-        <div class="white-background">
-            <div class="container">
-                <div class="row" id="about-heading">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h2 class="section-heading">Enjoy modern interpretations of classic cuisine of the Hawaiian Islands in an elegant, oceanfront setting for breakfast, lunch or dinner.</h2>
-                        <hr class="light">
-                    </div>
-                </div>
-                <div class="row" id="description">
-                    <div class="col-lg-3 text-center" id ="experience">
-                        <i class="text-primary sr-icons" id="sun"></i>
-                        <h3 class="about-subheading">The Experience</h3>
-                        <p class="text-faded">Take in the enchanting sights of Ko Olina Beach or watch the sun set as you dine at this open-air restaurant.</p>
-                    </div>
-                    <div class="col-lg-6 text-center" id="style" >
-                        <i class="text-primary sr-icons" id="fish"></i>
-                        <h3 class="about-subheading">Style and Theme</h3>
-                        <p class="text-faded">The restaurant is named after the ‘AMA‘AMA, a local mullet fish—and it’s inspired by the fishing settlements along the leeward coast of O‘ahu that date back to the 12th century.</p>
-                        <p class="text-faded">‘AMA‘AMA is designed to resemble a beachside house. Its spacious dining room features a thatched roof, mosaic designs, a fountain and a reflecting pool.</p>
-                    </div>
-                    <div class="col-lg-3 text-center" id="location">
-                        <i class="text-primary sr-icons" id="wave"></i>
-                        <h3 class="about-subheading">Location</h3>
-                        <p class="text-faded">‘AMA‘AMA is located beside the Waikolohe Valley pool area, just steps from the beach.</p>
-                    </div>                
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <a href="#menus" class="page-scroll btn btn-default btn-xl sr-button">Menus</a>  
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <gallery-directive></gallery-directive>
 
-    <section id="menus">
-        <div id="heading-background">
-            <h2 id="menus-heading">Menus</h2>
-            <p>Here, chefs use fresh, local ingredients and island flavors to create delectable dishes.</p>
-        </div>
-        <div class="container">
-            <div class="row" id="breakfast">
-                <div class="col-lg-4 col-lg-offset-1 col-md-12 text-center">
-                    <img class="sr-image" src="img/breakfast.jpg" alt="breakfast">
-                </div>
-                <div class="col-lg-6 col-md-12 text-center" id="breakfast-menu">
-                    <h3 class="menus-subheading">Breakfast</h3>
-                    <p class="text-faded">7:00 AM - 10:30 AM</p>
-                    <p class="text-faded">Choose from breakfast favorites, like eggs, waffles, bacon and pastries. Or opt for island specialties that feature fresh fish, local fruit, Portuguese sausage or other native ingredients.</p>
-                    <a href="pdf/ama-ama-breakfast-menu.pdf" target="_blank" class="btn btn-default btn-xl sr-button">View</a> 
-                </div> 
-            </div>
-            <div class="row" id="lunch">
-                <div class="col-lg-4 col-lg-offset-1 col-md-12 text-center">
-                    <img class="sr-image" src="img/lunch.jpg" alt="lunch">
-                </div>
-                <div class="col-lg-6 col-md-12 text-center" id="lunch-menu">
-                    <h3 class="menus-subheading">Lunch</h3>
-                    <p class="text-faded">11:30 AM - 2:30 PM</p>
-                    <p class="text-faded">Savor American favorites with an island twist — including sandwiches, salads, soups and seafood. </p>
-                    <a href="pdf/ama-ama-restaurant-lunch-menu.pdf" target="_blank" class="btn btn-default btn-xl sr-button">View</a> 
-                </div>
-            </div>
-            <div class="row" id="dinner">
-                <div class="col-lg-4 col-lg-offset-1 col-md-12 text-center">
-                    <img class="sr-image" src="img/dinner.jpg" alt="dinner">
-                </div>
-                <div class="col-lg-6 col-md-12 text-center" id="dinner-menu">
-                    <h3 class="menus-subheading">Dinner</h3>
-                    <p class="text-faded">5:00 PM - 9:00 PM</p>
-                    <p class="text-faded">7:00 PM - 9:00 PM Live Hawaiian Music (Fri - Sun)</p>
-                    <p class="text-faded">While the menu rotates to highlight seasonal ingredients, dinner offerings showcase sustainable seafood, steaks and pasta.</p>
-                    <a href="pdf/ama-ama-dinner-menu.pdf" target="_blank" class="btn btn-default btn-xl sr-button">View</a> 
-                </div>
-            </div>
-            <div class="row" id="keiki">
-                <div class="col-lg-4 col-lg-offset-1 col-md-12 text-center">
-                    <img class="sr-image" src="img/keiki.jpg" alt="keiki">
-                </div>
-                <div class="col-lg-6 col-md-12 text-center" id="keiki-menu">
-                    <h3 class="menus-subheading">Keiki</h3>
-                    <p class="text-faded">For Guests Ages 9 and Under</p>
-                    <a href="pdf/ama-ama-keiki-menu.pdf" target="_blank" class="btn btn-default btn-xl sr-button">View</a> 
-                </div>
-            </div>
-            <div class="row" id="additional-info">
-                <div class="col-lg-12 text-center">
-                    <p>Reservations required for breakfast, lunch and dinner.</p>
-                    <p>Menu items and prices are subject to change without notice.</p>
-                </div>
-            </div>
-        </div>        
-    </section> 
-
-    <section id="gallery">
-        <div class="container-fluid no-padding">
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-              <li data-target="#myCarousel" data-slide-to="3"></li>
-              <li data-target="#myCarousel" data-slide-to="4"></li>
-            </ol>
-
-            <div class="carousel-inner">
-              <div class="item active" id="slide-one" title="slide one">
-              </div>
-              <div class="item" id="slide-two" title="slide two">
-              </div>
-              <div class="item" id="slide-three" title="slide three">
-              </div>
-              <div class="item" id="slide-four" title="slide four">
-              </div>
-              <div class="item" id="slide-five" title="slide five">
-              </div>
-            </div>
-
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-    </section>
-
-    <section id="reservation">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Reserve a table</h2>
-                    <hr class="primary">
-                    <p class="text-faded">To make a reservation, please fill in the form below. All fields are required. At this time, you can make online reservations for a party of up to 9 guests.</p>
-                </div>
-            </div>
-
-            <form>
-              <div class="form-group row">
-                <label for="reservation-date" class="col-sm-1 col-form-label">Date</label>
-                <div class="col-sm-3">
-                    <input type="text" class="form-control text-faded" id="reservation-date" placeholder="dd/mm/yyyy" pattern="\d{2}/\d{2}/\d{4}" title="Date must be in the format dd/mm/yyyy" required>
-                </div> 
-                <label for="reservation-time" class="col-sm-1 col-form-label">Time</label>
-                <div class="col-sm-4">
-                    <select class="form-control text-faded" id="reservation-time" required>
-                      <option selected label="Choose reservation time" disabled hidden></option>
-                      <option>Breakfast 07:00 AM</option>
-                      <option>Breakfast 07:30 AM</option>
-                      <option>Breakfast 08:00 AM</option>
-                      <option>Breakfast 08:30 AM</option>
-                      <option>Breakfast 09:00 AM</option>
-                      <option>Breakfast 09:30 AM</option>
-                      <option>Breakfast 10:00 AM</option>
-                      <option>Breakfast 10:30 AM</option>
-                      <option>Breakfast 11:00 AM</option>
-                      <option>Lunch 11:30 AM</option>
-                      <option>Lunch 12:00 PM</option>
-                      <option>Lunch 12:30 PM</option>
-                      <option>Lunch 1:00 PM</option>
-                      <option>Lunch 1:30 PM</option>
-                      <option>Lunch 2:00 PM</option>
-                      <option>Lunch 2:30 PM</option>
-                      <option>Dinner 5:00 PM</option>
-                      <option>Dinner 5:30 PM</option>
-                      <option>Dinner 6:00 PM</option>
-                      <option>Dinner 6:30 PM</option>
-                      <option>Dinner 7:00 PM</option>
-                      <option>Dinner 7:30 PM</option>
-                      <option>Dinner 8:00 PM</option>
-                      <option>Dinner 8:30 PM</option>
-                      <option>Dinner 9:00 PM</option>
-                    </select>
-                </div> 
-                <label for="party-size" class="col-sm-1 col-form-label align-right">People</label>
-                <div class="col-sm-2">
-                    <select class="form-control text-faded" id="party-size" required>
-                      <option label="Select" selected disabled hidden></option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                      <option>6</option>
-                      <option>7</option>
-                      <option>8</option>
-                      <option>9</option>
-                    </select>
-                </div>                           
-              </div>
-
-              <div class="form-group row">                    
-                <label for="first-name" class="col-sm-2 col-form-label">First Name</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control text-faded" id="first-name" autocomplete="on" placeholder="Enter your first name" required>
-                </div>
-                <label for="last-name" class="col-sm-2 col-form-label align-right">Last Name</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control text-faded" id="last-name" autocomplete="on" placeholder="Enter your last name" required>
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <label for="email-address" class="col-sm-1 col-form-label">Email</label>
-                <div class="col-sm-5">
-                    <input type="email" class="form-control text-faded" id="email-address" autocomplete="on" placeholder="your@email.com" required>
-                </div>
-                <label for="phone-number" class="col-sm-1 col-form-label">Phone</label>
-                <div class="col-sm-5">
-                    <input type="tel" class="form-control text-faded" id="phone-number" autocomplete="on" placeholder="00000000000" pattern="[0-9]+" title="Mobile number must contain digits only" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="message">Additional information (food allergies, special requests)</label>
-                <textarea class="form-control text-faded" id="message" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-default btn-xl sr-button">Submit</button>
-            </form>
-
-            <div class="row" id="submitMessage">
-              <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p>Thank you. Your reservation has been accepted. We will contact you shortly.</p>
-              </div>              
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3 text-center">
-                    <h3>Reserve by phone</h3>
-                    <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p class="text-faded">(808) 674-6200</p>                
-                    <p class="text-faded">For Parties of 10 or more, please call (808) 674-6330.</p>
-                    <p class="text-faded">Dining parties on separate reservations cannot be guaranteed adjacent seating.</p>
-                </div>                
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>Copyright @ 2017 Disney, All Rights Reserved<p>
-    </footer>
+    <reservation-directive></reservation-directive>
+    
+    <footer-directive></footer-directive>
 
     <script src="vendor/jquery/jquery.min.js"></script>    
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -311,6 +41,7 @@
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="vendor/bootstrap/js/creative.js"></script>
     <script src="js/amaama.js"></script>
+    <script src="js/amaamaApp.js"></script>
 
 </body>
 

@@ -6,6 +6,23 @@ angular.module('amaamaApp').config(function($locationProvider, $routeProvider) {
 
 angular.module('amaamaDirective',[])
 
+.directive('scroll', function(){
+  return {
+    restrict: 'A',
+    link: function(scope,element){
+    // the function below is used from bootstrap template
+    $('a.page-scroll').on('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+    });
+      //end of function used from bootstrap template      
+    }
+  };
+})
+
 .directive('navDirective', function() {
   return {
     restrict: 'E',
@@ -16,14 +33,7 @@ angular.module('amaamaDirective',[])
               offset: {
                   top: 100
               }
-          });     
-      $('a.page-scroll').on('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
-        }, 1250, 'easeInOutExpo');
-        event.preventDefault();
-      });
+          });        
       //end of function used from bootstrap template
     }
   };

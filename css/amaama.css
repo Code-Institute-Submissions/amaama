@@ -1,23 +1,13 @@
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
 body {
   font-family: 'Catamaran', sans-serif;
 }
 hr {
   border-color: rgba(149,78,45,1);
-  border-width: 3px;  
-  max-width: 50px;
 }
 hr.light {
   border-color: rgba(149,78,45,1);
 }
 a {
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
   color: rgba(149,78,45,1);
 }
 a:hover,
@@ -26,7 +16,7 @@ a:focus {
 }
 h1,
 h2,
-h3,
+h3, 
 h4,
 h5,
 h6 {
@@ -34,7 +24,6 @@ h6 {
 }
 p {
   font-size: 20px;
-  line-height: 1.5;
   margin-bottom: 15px;
 }
 .bg-primary {
@@ -47,22 +36,14 @@ p {
 }
 .navbar-default {
   background-color: rgba(149,78,45,1);
-  border-color: rgba(34, 34, 34, 0.05);
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
   color: rgba(255,255,255,0.8);
   font-family: 'Andika', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;  
 }
 .navbar-default .navbar-header .navbar-toggle {
-  font-weight: 700;
   font-size: 15px;
   color: rgba(255,255,255,0.8);
-  text-transform: uppercase;
   border-color:rgba(255,255,255,0.8);
   padding: 7px 10px;
 }
@@ -75,8 +56,6 @@ p {
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
   font-family: 'Andika', sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
   font-size: 15px;
   color: rgba(255,255,255,0.8);
 }
@@ -99,66 +78,17 @@ p {
     text-align: center;
     line-height: 0px;
 }
-@media (min-width: 768px) {
-  .navbar-default {
-    background-color: transparent;
-    border-color: rgba(255, 255, 255, 0.3);
-  }
-  .navbar-default .navbar-header .navbar-brand {
-    display:none;
-  }
-  .navbar-default .nav > li > a,
-  .navbar-default .nav > li > a:focus {
-    color: rgba(255,255,255,0.8);
-  }
-  .navbar-default .nav > li > a:hover,
-  .navbar-default .nav > li > a:focus:hover {
-    color: rgba(255,255,255,1);
-  }
-  .navbar-fixed-top {
-    top: 0;
-    border-width: 0 0 0px;
-  }
-  .navbar-default.affix-top {
+.navbar-default.affix {
   border:none;
-  }
-  .navbar-default.affix {
-    background-color: rgba(149,78,45,1);
-    border-color: rgba(34, 34, 34, 0.05);
-  }
-  .navbar-default.affix .navbar-header .navbar-brand {
-    display:block;
-    color: rgba(255,255,255,0.8);
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  .navbar-default.affix .navbar-header .navbar-brand:hover,
-  .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: rgba(255,255,255,1);
-  }
-  .navbar-default.affix .nav {
-    margin-right:116px;
-  }
-  .navbar-default.affix .nav > li > a:hover,
-  .navbar-default.affix .nav > li > a:focus:hover {
-    color: rgba(255,255,255,0.8);
-    background-color: forestgreen;
-  }
 }
 header {
-  position: relative;
-  width: 100%;
   min-height: 100%;
-  color: white;
 }
 header .header-content {
   padding: 70px 0 0 0;
-  width: 100%;
   z-index:2;
   position: absolute;
   min-height: 100%;
-  text-align: center;  
 }
 header .video-container{
   position: absolute;
@@ -206,24 +136,6 @@ header .header-content #arrow:hover{
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-}
-@media (min-width: 768px) {
-  header .header-content #logo{
-  width:350px;
-  margin-left: 50px;
-  }
-header .header-content #arrow{
-  margin-left:-38px;
-  bottom:50px;
-  width:70px;
-  height:70px;
-  background-image: url("../img/arrow2.png");
-  }
-}
-@media (min-width: 1200px) {
-  header .header-content #arrow{
-  margin-left:-45px;
-  }
 }
 #about .white-background{
   padding:60px 0px;
@@ -283,11 +195,6 @@ header .header-content #arrow{
   height: 48px;
   display: inline-block;
 }
-@media (min-width: 768px) {
-  #style {
-    max-width: 755px;
-  }
-}
 .section-heading {
   margin-top: 0;
 }
@@ -333,37 +240,6 @@ header .header-content #arrow{
   margin-top: 15px;
   padding:0px;
 }
-@media (min-width: 768px){
-  #menus-heading{
-    padding-top: 70px;
-  }
-  #menus img{
-    width:340px;
-  }
-  #breakfast{
-  margin-top: 60px;
-  }  
-}
-@media (min-width: 1200px){
-  #breakfast-menu{
-    height: 255px;
-  }
-  #lunch-menu{
-    height: 250px;
-    padding-top: 20px;
-  }
-  #dinner-menu{
-    height: 281px;
-    padding:0px 45px;
-  }
-  #dinner-img{
-    margin-top: 20px;
-  }
-  #keiki-menu{
-    height: 199px;
-    padding-top: 30px;
-  }
-}
 #gallery, .no-padding{
   padding: 0px;
 }
@@ -389,31 +265,6 @@ header .header-content #arrow{
   background-size: cover;
   background-position: 50%;
 }
-@media (min-width: 768px){
-  #myCarousel, .carousel-inner, .item{
-    height: 450px;
-  }
-  #slide-one{
-  background-image: url(../img/slide-one.jpg);
-  }
-  #slide-two{
-    background-image: url(../img/slide-two.jpg);
-  }
-  #slide-three{
-    background-image: url(../img/slide-three.jpg);
-  }
-  #slide-four{
-    background-image: url(../img/slide-four.jpg);
-  }
-  #slide-five{
-    background-image: url(../img/slide-five.jpg);
-  }
-}
-@media (min-width: 1200px){
-  #myCarousel, .carousel-inner, .item{
-    height: 750px;
-  } 
-}
 #reservation{
   padding:30px 15px 0px 15px;
 }
@@ -423,18 +274,6 @@ header .header-content #arrow{
 }
 .form-group{
   margin-bottom: 0px;
-}
-@media (min-width: 768px){
-  #reservation{
-  padding:60px 15px 0px 15px;
-  }
-  #reservation form {
-    text-align: center;
-    margin: 15px auto 10px auto;
-  }
-  .form-group{
-  margin-bottom: 15px;
-}
 }
 #reservation label {
   font-family: 'Catamaran', sans-serif;
@@ -470,9 +309,6 @@ footer p{
 .btn-default {
   color: rgba(255,255,255,0.9);
   background-color: rgba(149,78,45,1);
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
 }
 .btn-default:hover,
 .btn-default:focus,
@@ -485,11 +321,126 @@ footer p{
 }
 .btn {
   font-family: 'Andika', sans-serif;
-  border: none;
-  border-radius: 300px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
-.btn-xl {
-  padding: 15px 30px;
+@media (min-width: 768px) {
+  .navbar-default {
+    background-color: transparent;
+  }
+  .navbar-default .navbar-header .navbar-brand {
+    display:none;
+  }
+  .navbar-default .nav > li > a,
+  .navbar-default .nav > li > a:focus {
+    color: rgba(255,255,255,0.8);
+  }
+  .navbar-default .nav > li > a:hover,
+  .navbar-default .nav > li > a:focus:hover {
+    color: rgba(255,255,255,1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 0px;
+  }
+  .navbar-default.affix-top {
+    border:none;
+  }
+  .navbar-default.affix {
+    background-color: rgba(149,78,45,1);
+  }
+  .navbar-default.affix .navbar-header .navbar-brand {
+    display:block;
+    color: rgba(255,255,255,0.8);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .navbar-default.affix .navbar-header .navbar-brand:hover,
+  .navbar-default.affix .navbar-header .navbar-brand:focus {
+    color: rgba(255,255,255,1);
+  }
+  .navbar-default.affix .nav {
+    margin-right:116px;
+  }
+  .navbar-default.affix .nav > li > a:hover,
+  .navbar-default.affix .nav > li > a:focus:hover {
+    color: rgba(255,255,255,0.8);
+    background-color: forestgreen;
+  }
+  header .header-content #logo{
+    width:350px;
+    margin-left: 50px;
+  }
+  header .header-content #arrow{
+    margin-left:-38px;
+    bottom:50px;
+    width:70px;
+    height:70px;
+    background-image: url("../img/arrow2.png");
+  }
+  #style {
+    max-width: 755px;
+  }
+  #menus-heading{
+    padding-top: 70px;
+  }
+  #menus img{
+    width:340px;
+  }
+  #breakfast{
+    margin-top: 60px;
+  }
+  #myCarousel, .carousel-inner, .item{
+    height: 450px;
+  }
+  #slide-one{
+    background-image: url(../img/slide-one.jpg);
+  }
+  #slide-two{
+    background-image: url(../img/slide-two.jpg);
+  }
+  #slide-three{
+    background-image: url(../img/slide-three.jpg);
+  }
+  #slide-four{
+    background-image: url(../img/slide-four.jpg);
+  }
+  #slide-five{
+    background-image: url(../img/slide-five.jpg);
+  }
+  #reservation{
+    padding:60px 15px 0px 15px;
+  }
+  #reservation form {
+    text-align: center;
+    margin: 15px auto 10px auto;
+  }
+  .form-group{
+    margin-bottom: 15px;  
+  }
+}
+@media (min-width: 1200px) {
+  header .header-content #arrow{
+    margin-left:-45px;
+  }
+  #breakfast-menu{
+    height: 255px;
+  }
+  #lunch-menu{
+    height: 250px;
+    padding-top: 20px;
+  }
+  #dinner-menu{
+    height: 281px;
+    padding:0px 45px;
+  }
+  #dinner-img{
+    margin-top: 20px;
+  }
+  #keiki-menu{
+    height: 199px;
+    padding-top: 30px;
+  }
+  #myCarousel, .carousel-inner, .item{
+    height: 750px;
+  } 
 }

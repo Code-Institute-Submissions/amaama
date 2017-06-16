@@ -6,7 +6,7 @@ angular.module('amaamaApp').config(function($locationProvider, $routeProvider) {
 
 angular.module('amaamaDirective',[])
 
-.directive('scroll', function(){
+.directive('navDirective', 'aboutDirective', function(){
   return {
     restrict: 'A',
     link: function(scope,element){

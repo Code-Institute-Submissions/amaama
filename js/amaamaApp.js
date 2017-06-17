@@ -12,7 +12,7 @@ angular.module('amaamaDirective',[])
     templateUrl: 'templates/navDirective.html',
     link: function(scope,element){
       // the functions below are used from bootstrap template
-      $('.navbar-collapse ul li a').click(function() {
+      $('.navbar-collapse ul li a').on('click', function(event) {
         $('.navbar-toggle:visible').click();
       });
       $('#mainNav').affix({

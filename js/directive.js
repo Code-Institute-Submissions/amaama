@@ -4,7 +4,19 @@ angular.module('amaamaDirective',[])
   return {
     restrict: 'E',
     templateUrl: 'templates/navDirective.html',
-    controler: ['MenuController', 'ScrollController']
+    controller: 'ScrollController',
+    link: function(scope,element){
+      // the functions below are used from bootstrap template
+      $('.navbar-collapse ul li a').on('click', function(event) {
+        $('.navbar-toggle:visible').click();
+      });
+      $('#mainNav').affix({
+              offset: {
+                  top: 100
+              }
+      });    
+      //end of functions used from bootstrap template
+    }
   };
 })
 
@@ -20,7 +32,21 @@ angular.module('amaamaDirective',[])
   return {
     restrict: 'E',
     templateUrl: 'templates/aboutDirective.html',
-    controller: ['ScrollController', 'IconController', 'ButtonController']
+    controller: 'ScrollController',
+    link: function(scope,element){
+      // the functions below are used from bootstrap template     
+      window.sr = ScrollReveal();
+      sr.reveal('.sr-icons', {
+          duration: 600,
+          scale: 0.3,
+          distance: '0px'
+      }, 200);
+      sr.reveal('.sr-button', {
+        duration: 1000,
+        delay: 200
+      });
+      //end of functions used from bootstrap template
+    }
   };
 })
 
@@ -28,7 +54,18 @@ angular.module('amaamaDirective',[])
   return {
     restrict: 'E',
     templateUrl: 'templates/menusDirective.html',
-    controller: ['ButtonController', 'ImageController']
+    link: function (scope,element){
+      // the function below is used from bootstrap template
+      sr.reveal('.sr-button', {
+        duration: 1000,
+        delay: 200
+      });
+      //end of function used from bootstrap template
+      sr.reveal(".sr-image", {
+        duration: 1000,
+        delay: 200
+      });
+    }
   };
 })
 
@@ -43,7 +80,20 @@ angular.module('amaamaDirective',[])
   return {
     restrict: 'E',
     templateUrl: 'templates/reservationDirective.html',
-    controller: ['ButtonController', 'ReservationController']
+    link: function(scope, element){      
+      $("#submitMessage").hide();
+      // the function below is used from bootstrap template
+      sr.reveal('.sr-button', {
+        duration: 1000,
+        delay: 200
+      });
+      //end of function used from bootstrap template
+      $("form").on("submit", function showMessage() {
+        $("form").fadeOut(400);
+        $("#submitMessage").delay(400).fadeIn(400);
+        event.preventDefault();
+      });
+      }
   };
 })
 

@@ -11,7 +11,7 @@ angular.module('amaamaDirective',[])
     restrict: 'E',
     templateUrl: 'templates/navDirective.html',
     link: function(scope,element){
-      // the functions below is used from bootstrap template
+      // the functions below are used from bootstrap template
       $('.navbar-collapse ul li a').click(function() {
         $('.navbar-toggle:visible').click();
       });
@@ -35,7 +35,18 @@ angular.module('amaamaDirective',[])
 .directive('headerDirective', function() {
   return {
     restrict: 'E',
-    templateUrl: 'templates/headerDirective.html'
+    templateUrl: 'templates/headerDirective.html',
+    link: function(scope,element){
+      // the function below is used from bootstrap template      
+      $('a.page-scroll').on('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+      });      
+      //end of function used from bootstrap template
+    }
   };
 })
 
@@ -44,7 +55,14 @@ angular.module('amaamaDirective',[])
     restrict: 'E',
     templateUrl: 'templates/aboutDirective.html',
     link: function(scope,element){
-      // functions below are used from bootstrap template
+      // the functions below are used from bootstrap template
+      $('a.page-scroll').on('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+      });      
       window.sr = ScrollReveal();
       sr.reveal('.sr-icons', {
           duration: 600,

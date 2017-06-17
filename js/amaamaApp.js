@@ -11,7 +11,10 @@ angular.module('amaamaDirective',[])
     restrict: 'E',
     templateUrl: 'templates/navDirective.html',
     link: function(scope,element){
-      // the functions below is used from bootstrap template
+      // the functions below are used from bootstrap template
+      $('.navbar-collapse ul li a').on('click', function(event) {
+        $('.navbar-toggle:visible').click();
+      });
       $('#mainNav').affix({
               offset: {
                   top: 100
@@ -52,7 +55,7 @@ angular.module('amaamaDirective',[])
     restrict: 'E',
     templateUrl: 'templates/aboutDirective.html',
     link: function(scope,element){
-      // functions below are used from bootstrap template
+      // the functions below are used from bootstrap template
       $('a.page-scroll').on('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({

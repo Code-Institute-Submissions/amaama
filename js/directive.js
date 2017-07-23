@@ -15,11 +15,7 @@ angular.module('amaamaDirective',[])
                   top: 100
               }
       });
-      //end of functions used from bootstrap template
-      $('li').on('click', function(event){        
-        $(this).addClass('active');
-        $(this).siblings(this).removeClass('active');
-      }); 
+      //end of functions used from bootstrap template      
     }
   };
 })

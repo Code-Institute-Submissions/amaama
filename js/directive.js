@@ -14,12 +14,17 @@ angular.module('amaamaDirective',[])
               offset: {
                   top: 100
               }
+<<<<<<< HEAD
       });    
       //end of functions used from bootstrap template
       $('li').on('click', function(event){        
         $(this).addClass('active');
         $(this).siblings(this).removeClass('active');
       }); 
+=======
+      });
+      //end of functions used from bootstrap template      
+>>>>>>> master
     }
   };
 })

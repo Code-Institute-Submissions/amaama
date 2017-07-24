@@ -28,10 +28,13 @@ The website has Hawaii theme through it with Hawaiian style icons and sand backg
 
 ## Technical information
 
-The website was created using Bootstrap template Creative (https://startbootstrap.com/template-overviews/creative/). Most of the HTML and CSS code was changed as required. The following design elements were kept:
+### Template
+
+The website was created using Bootstrap template [Creative](https://startbootstrap.com/template-overviews/creative/). Most of the HTML and CSS code was changed as required. The following design elements were kept:
 
  - Fixed navigation
-Additionally the menu options moved to the centre. Font size, font family, text colour, background colour, links styles changed. Border removed. 
+
+ Additionally the menu options moved to the centre. Font size, font family, text colour, background colour, links styles changed. Border removed. 
 
  - Heading and horizontal line in About section and heading, horizontal line and paragraph in Reservation section
 
@@ -39,11 +42,23 @@ Additionally the menu options moved to the centre. Font size, font family, text 
 
  The rest of the design was implemented to suit the needs of the client. All the third party code is included in the directory “vendor”.
 
+
+### AngularJS
+
 The ‘AMA‘AMA restaurant is created as an AngularJS app. It has several directives for each section of the website. Each directive loads the relevant template for the website section and performs jQuery functions to fix navigation, animate buttons, hide and fade in message on form submission. The app also has one controller to control scrolling effects on the website. Some jQuery functions were included in the Bootstrap template and there are comments in the code which point out which functions were taken from the template.
+
+
+### Images
 
 All images have higher resolution to look good on retina devices. An arrow image on the main section and each of the slide images in the Gallery section has two sizes – one for mobile and tablet screens and one for desktop size screens to improve website load speed on small devices.
 
+
+## Reservation form
+
 All the fields in the reservation form on the website are required to fill in except Additional information field. Date and Phone input fields have pattern attribute to specify the necessary format. If any of the fields are not filled in (in case if, they are required) or if they are filled in incorrectly, the message will show up informing what is wrong. On clicking Submit button, the message will appear informing a user that the reservation has been accepted.
+
+
+### Validation and Testing
 
 All the HTML, CSS and JS files were validated using The W3C Markup Validation Service, The W3C CSS Validation Service, JSLint.
 
@@ -53,5 +68,9 @@ The website was tested in different browsers – Opera, Google Chrome, Mozilla, 
 
 After several unsuccessful tries to fix the issues, it was decided to keep the style as it is. Internet Explorer is the least popular browser and visible white space is not a critical issue.
 
-The website was also tested on different screen sizes using Responsive Web Design Tester in Google Chrome. jQuery code functionality was tested using console in browser. 
+The website was also tested on different screen sizes using Responsive Web Design Tester in Google Chrome. jQuery code functionality was tested using console in browser.
+
+
+### Deployment
+
 The website was deployed to GitHub pages.

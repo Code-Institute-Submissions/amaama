@@ -53,7 +53,7 @@ The ‘AMA‘AMA restaurant is created as an AngularJS app. It has several direc
 All images have higher resolution to look good on retina devices. An arrow image on the main section and each of the slide images in the Gallery section has two sizes – one for mobile and tablet screens and one for desktop size screens to improve website load speed on small devices.
 
 
-## Reservation form
+### Reservation form
 
 All the fields in the reservation form on the website are required to fill in except Additional information field. Date and Phone input fields have pattern attribute to specify the necessary format. If any of the fields are not filled in (in case if, they are required) or if they are filled in incorrectly, the message will show up informing what is wrong. On clicking Submit button, the message will appear informing a user that the reservation has been accepted.
 

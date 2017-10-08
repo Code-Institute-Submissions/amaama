@@ -6,7 +6,7 @@ This is Code Institute Stream One Project as part of the Full Stack Development 
 
 ‘AMA‘AMA is Aulani Disney Resort & Spa open-air restaurant overlooking Ko Olina Beach in Hawai‘i. Aulani Resort is the ultimate family getaway—celebrating the beauty, history and welcoming spirit of the Hawai‘i island. ‘AMA‘AMA is designed to resemble a beachside house and is located just steps from the beach. ‘AMA‘AMA serves classic Hawaiian cuisine with a modern twist.
 
-Aulani Disney Resort & Spa has an official website describing all the services they provide. ‘AMA‘AMA restaurant website is created to promote the restaurant additionally and to attract more visitors.
+Aulani Disney Resort & Spa has an [official website](https://www.disneyaulani.com/dining/table-service/ama-ama-restaurant/) describing all the services they provide. ‘AMA‘AMA restaurant website is created to promote the restaurant additionally and to attract more visitors.
 
 
 ## Target audience
@@ -45,7 +45,7 @@ The website was created using Bootstrap template [Creative](https://startbootstr
 
 ### AngularJS
 
-The ‘AMA‘AMA restaurant is created as an AngularJS app. It has several directives for each section of the website. Each directive loads the relevant template for the website section and performs jQuery functions to fix navigation, animate buttons, hide and fade in message on form submission. The app also has one controller to control scrolling effects on the website. Some jQuery functions were included in the Bootstrap template and there are comments in the code which point out which functions were taken from the template.
+The ‘AMA‘AMA restaurant is created as an AngularJS app. It has several directives for each section of the website. Each directive loads the relevant template for the website section and performs jQuery functions to fix navigation, animate buttons, hide and fade in a message on form submission. The app also has one controller to control scrolling effects on the website. Some jQuery functions were included in the Bootstrap template and there are comments in the code which point out which functions were taken from the template.
 
 
 ### Images
@@ -65,6 +65,7 @@ All the HTML, CSS and JS files were validated using The W3C Markup Validation Se
 The website was tested in different browsers – Opera, Google Chrome, Mozilla, Microsoft Edge and Internet Explorer. Few issues were found:
  - The arrow on the main page is not aligned in the centre in Internet Explorer;
  - White space is visible between gallery section and previous element in the DOM. White space is visible only on screens wider than 768px and in Internet Explorer, Microsoft Edge and Mozilla. It does not happen in Chrome and Opera.
+ - When you scroll page down till the end and come back to the top the bacground video is not displaying and is black on Microsoft Edge
 
 After several unsuccessful tries to fix the issues, it was decided to keep the style as it is. Internet Explorer is the least popular browser and visible white space is not a critical issue.
 
@@ -73,4 +74,4 @@ The website was also tested on different screen sizes using Responsive Web Desig
 
 ### Deployment
 
-The website was deployed to GitHub pages.
+The website was deployed to GitHub pages. Here is the [link to the page](https://tatjanakolhapure.github.io/amaama/).

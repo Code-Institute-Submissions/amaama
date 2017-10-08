@@ -67,7 +67,7 @@ The website was tested in different browsers – Opera, Google Chrome, Mozilla, 
  - White space is visible between gallery section and previous element in the DOM. White space is visible only on screens wider than 768px and in Internet Explorer, Microsoft Edge and Mozilla. It does not happen in Chrome and Opera.
  - When you scroll page down till the end and come back to the top the bacground video is not displaying and is black on Microsoft Edge
 
-After several unsuccessful tries to fix the issues, it was decided to keep the style as it is. Internet Explorer is the least popular browser and visible white space is not a critical issue.
+After several unsuccessful tries to fix the issues, it was decided to keep the style as it is. Internet Explorer and Microsoft Edge are the least popular browsers and visible white space is not a critical issue.
 
 The website was also tested on different screen sizes using Responsive Web Design Tester in Google Chrome. jQuery code functionality was tested using console in browser.
 
